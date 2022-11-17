@@ -1,0 +1,19 @@
+  <table>
+    <thead>
+      <tr>
+        <td>Avatar</td>
+        <td>Name</td>
+        <td>Gender</td>
+      </tr>
+    </thead>
+    <tbody (scroll)="onScroll($event)">
+      <tr *ngFor="let ch of characters" routerLink="/detail/{{ch.id}}">
+        <td><img height="150" src="{{ch.image}}"></td>
+        <td>{{ch.name}}</td>
+        <td><img height=50px src="/assets/{{ch.gender}}.svg"></td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngIf="info">
+    <p>Total count: {{info.count}}</p>
+  </div>

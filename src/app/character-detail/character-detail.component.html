@@ -1,0 +1,14 @@
+<div *ngIf="character">
+
+  <h2>{{character.name}}</h2>
+  <img src="{{character.image}}">
+  <p>Name: {{character.name}}</p>
+  <p>Status: {{character.status}}</p>
+  <p>Gender: {{character.gender}} <img height="20px" src="assets/{{character.gender}}.svg"></p>
+  Episodes:
+  <ul>
+    <li *ngFor="let ep of episodes">
+      <p>{{ep.episode}}:  {{ep.name}}</p>
+    </li>
+  </ul>
+</div>

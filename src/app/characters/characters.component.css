@@ -1,0 +1,16 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tbody {
+  overflow-y: scroll;
+  height: 700px;
+  display: block;
+}
+
+thead, tbody tr {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
